@@ -1,0 +1,31 @@
+.filter-search {
+    position: absolute ;
+    top: 68px ;
+    width: 100% ;
+    background-color: white ;
+    box-shadow: 1px 1px 10px gray ;
+    border-radius: 10px ;
+    right: 0 ;
+    transition: .3s ease
+}
+
+.filter-search > ul {
+    list-style-type: none ;
+}
+
+.filter-search > ul > li {
+    display: block ;
+    padding: 20px 20px ;
+    font-size: 16.4px ;
+    background-color: #d6e2e4 ;
+    margin: 8px 0 ;
+    cursor: pointer ;
+    transition: .2s ease ;
+}
+.filter-search > ul > li:hover {
+    background-color: #a8b7b9
+}
+
+.bold {
+    font-weight: 700 ;
+}

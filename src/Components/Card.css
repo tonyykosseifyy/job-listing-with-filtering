@@ -1,0 +1,138 @@
+.card {
+    background-color: white ;
+    box-shadow: 0px 10px 10px #b5c9cc ;
+    display: flex ;
+    width: 100% ;
+    margin: 20px 0 ;
+    border-radius: 5px ;
+    padding: 0px 10px ;
+    position: relative ;
+    justify-content: space-between ;
+}
+.card-left {
+    display:flex ;
+    align-items: center ;
+    flex: .5 ;
+}
+.card-left svg {
+    transform: scale(0.8)
+}
+.card-left-info {
+    display: flex ;
+    flex-direction: column ;
+    padding: 15px 15px ;
+}
+
+.card-left-info p > span {
+    color: #8D9192 ;
+    display: inline-block ;
+    margin: 5px 10px 5px 0;
+}
+.card-left-info p:first-of-type {
+    margin: 14px 0 ;
+    font-weight: bold ;
+    transition: .2s ease-in;
+    cursor: pointer ;
+}
+.card-left-info p:first-of-type:hover {
+    color: #699E98
+}
+.card-left-info h3 {
+    font-size: 17px ;
+    color: #699E98 ;
+}
+
+.card-header {
+    display: flex ;
+    align-items: baseline ;
+}
+
+.card-header > i {
+    margin-left: 18px ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    background-color: #5EA2A3 ;
+    border-radius: 15px ;
+    font-size: 12px ;
+    color: white ;
+    text-transform: uppercase;
+    padding: 6px 6px ;
+    cursor: pointer ;
+    justify-items: center;
+    align-content: center;
+    transition: .2s ease-in ;
+    font-weight: bold ;
+}
+
+.card-header > i.black-span {
+    background-color: black ;
+    margin-left: 10px ;
+}
+
+.card-header > i:hover {
+    background-color: #446a6b ;
+    box-shadow: 1px 1px 6px gray ;
+}
+.card-right {
+    display: flex ;
+    align-items: center ;
+    flex-wrap: wrap ;
+    min-height: 100px ;
+    align-content: center;
+    justify-content: flex-end;
+    flex: .5
+}
+
+.location-info {
+    display: flex ;
+    align-items: center ;
+    flex-wrap: wrap;
+}
+.bar {
+    display: none ;
+    background-color: #a1a5a7 ;
+    width: 90% ;
+    height: 1.3px ;
+    margin-left: 15px ;
+}
+@media screen and (max-width:1050px) {
+    .card-right {
+        flex: .4 
+    }
+    .card-left {
+        flex: .6
+    }
+    .card-left-info h3 {
+        font-size: 16px ;
+    }
+
+}
+@media screen and (max-width: 840px) {
+    .card-right {
+        justify-content: flex-start;
+        padding: 10px 5px ;
+    }
+    .card {
+        margin: 35px 0 ;
+        flex-direction: column ;
+    }
+    .card-left svg {
+        transform: scale(0.5) translate(-15px , -100%);
+        position: absolute ;
+        top: 0 ;
+    }
+    .card-left-info {
+        padding-top: 40px ;
+        padding-bottom: 20px ;
+    }
+    .bar {
+        display: block 
+    }
+    .card-left-info h3 {
+        font-size: 15px ;
+    }
+    .card-header i {
+        margin-left: 7px ;
+    }
+}
